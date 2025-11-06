@@ -1,6 +1,6 @@
 # Despair Theme
 
-A dark theme for those who've given up on pastels.
+A dark theme for the chromatically exhausted.
 
 ![Despair Color Palette](palette.svg)
 
