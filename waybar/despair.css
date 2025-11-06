@@ -1,0 +1,48 @@
+/* Despair Design System - Waybar Colors */
+
+/* === Background Colors (Layered Depth) === */
+@define-color background #08090a;           /* Void Black - Primary background */
+@define-color background-shadow #0f1011;    /* Shadow Gray - Borders, dividers */
+@define-color background-charcoal #181a1b;  /* Deep Charcoal - Panels, status bar */
+@define-color background-eerie #222823;     /* Eerie Black - Active sections */
+@define-color background-slate #2d3236;     /* Slate Gray - Hover states */
+
+/* === Foreground & Text Colors === */
+@define-color foreground #f4f7f5;           /* Seasalt - Main text */
+@define-color foreground-emphasis #fefefe;  /* Pure White - Emphasized text */
+@define-color foreground-light #b8bbbf;     /* Light Gray - Secondary info */
+@define-color foreground-silver #8b8f94;    /* Silver Gray - Tertiary text */
+@define-color foreground-dim #6a6e73;       /* Dim Gray - Inactive elements */
+
+/* === Teal Accent Spectrum (Interactive Elements) === */
+@define-color accent-bright #7db5b5;        /* Bright Teal - Primary interactive */
+@define-color accent-slate #5a8585;         /* Slate Teal - Secondary interactive */
+@define-color accent-deep #3d6666;          /* Deep Teal - Tertiary elements */
+@define-color accent-dark #2a4a4a;          /* Dark Teal - Hover/selection states */
+@define-color accent-muted #1f3636;         /* Muted Teal - Subtle highlights */
+
+/* === Semantic Status Colors === */
+@define-color semantic-success #7db5b5;     /* Success Teal - Positive states */
+@define-color semantic-error #d96c75;       /* Soft Red - Errors, critical */
+@define-color semantic-warning #d9a66c;     /* Muted Orange - Warnings */
+@define-color semantic-info #6c9bd9;        /* Info Blue - Informational */
+
+/* === Border & Divider Colors === */
+@define-color border-subtle #0f1011;        /* Shadow Gray - Minimal borders */
+@define-color border-medium #575a5e;        /* Davys Gray - Standard borders */
+@define-color border-active #5a8585;        /* Slate Teal - Active borders */
+@define-color border-focus #7db5b5;         /* Bright Teal - Focus indicators */
+
+/* === Neutral Gray Hierarchy === */
+@define-color gray-rose #a7a2a9;            /* Rose Quartz - Selected text */
+@define-color gray-storm #757982;           /* Storm Gray - Separators */
+@define-color gray-davys #575a5e;           /* Davys Gray - Subtle UI */
+@define-color gray-graphite #3f4245;        /* Graphite - Very subtle dividers */
+
+/* === Legacy Aliases for Compatibility === */
+@define-color hint @accent-slate;           /* Slate Teal for hints */
+@define-color card @background-charcoal;    /* Deep Charcoal for cards */
+@define-color primary @accent-slate;        /* Slate Teal for primary actions */
+@define-color muted-foreground @foreground-silver; /* Silver Gray for muted text */
+@define-color destructive @semantic-error;  /* Soft Red for destructive actions */
+@define-color warning @semantic-warning;    /* Muted Orange for warnings */

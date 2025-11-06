@@ -1,0 +1,107 @@
+# Despair Theme for eza
+# Dark, muted palette with teal accents and gray hierarchy
+
+colourful: true
+
+filekinds:
+  normal: {foreground: "#f4f7f5"}            # regular files - Seasalt
+  directory: {foreground: "#5a8585"}         # directories - Slate Teal
+  symlink: {foreground: "#6c9bd9"}           # symlinks - Info Blue
+  pipe: {foreground: "#6a6e73"}              # pipes - Dim Gray
+  block_device: {foreground: "#d9a66c"}      # block devices - Muted Orange
+  char_device: {foreground: "#d9a66c"}       # char devices - Muted Orange
+  socket: {foreground: "#d96c75"}            # sockets - Soft Red
+  special: {foreground: "#5a8585"}           # special - Slate Teal
+  executable: {foreground: "#7db5b5", is_bold: true}  # executables - Bright Teal (bold)
+  mount_point: {foreground: "#5a8585"}       # mount points - Slate Teal
+
+perms:
+  user_read: {foreground: "#d96c75"}         # user read - Soft Red
+  user_write: {foreground: "#d96c75"}        # user write - Soft Red
+  user_executable_file: {foreground: "#7db5b5"}  # user execute - Bright Teal
+  user_execute_other: {foreground: "#7db5b5"}    # execute other - Bright Teal
+  group_read: {foreground: "#d9a66c"}        # group read - Muted Orange
+  group_write: {foreground: "#d9a66c"}       # group write - Muted Orange
+  group_execute: {foreground: "#7db5b5"}     # group execute - Bright Teal
+  other_read: {foreground: "#d9a66c"}        # other read - Muted Orange
+  other_write: {foreground: "#d9a66c"}       # other write - Muted Orange
+  other_execute: {foreground: "#7db5b5"}     # other execute - Bright Teal
+  special_user_file: {foreground: "#6c9bd9"} # special user - Info Blue
+  special_other: {foreground: "#6c9bd9"}     # special other - Info Blue
+  attribute: {foreground: "#6a6e73"}         # attribute - Dim Gray
+
+size:
+  major: {foreground: "#3d6666"}             # major - Deep Teal
+  minor: {foreground: "#5a8585"}             # minor - Slate Teal
+  number_byte: {foreground: "#f4f7f5"}       # byte - Seasalt
+  number_kilo: {foreground: "#f4f7f5"}       # kilo - Seasalt
+  number_mega: {foreground: "#f4f7f5"}       # mega - Seasalt
+  number_giga: {foreground: "#b8bbbf"}       # giga - Light Gray
+  number_huge: {foreground: "#7db5b5"}       # huge - Bright Teal
+  unit_byte: {foreground: "#6a6e73"}         # unit byte - Dim Gray
+  unit_kilo: {foreground: "#6a6e73"}         # unit kilo - Dim Gray
+  unit_mega: {foreground: "#6a6e73"}         # unit mega - Dim Gray
+  unit_giga: {foreground: "#6a6e73"}         # unit giga - Dim Gray
+  unit_huge: {foreground: "#6a6e73"}         # unit huge - Dim Gray
+
+users:
+  user_you: {foreground: "#f4f7f5"}          # current user - Seasalt
+  user_root: {foreground: "#d96c75"}         # root user - Soft Red
+  user_other: {foreground: "#b8bbbf"}        # other user - Light Gray
+  group_yours: {foreground: "#f4f7f5"}       # your group - Seasalt
+  group_other: {foreground: "#6a6e73"}       # other group - Dim Gray
+  group_root: {foreground: "#d96c75"}        # root group - Soft Red
+
+links:
+  normal: {foreground: "#7db5b5"}            # links - Bright Teal
+  multi_link_file: {foreground: "#5a8585"}   # multi-links - Slate Teal
+
+git:
+  new: {foreground: "#7db5b5"}               # added - Bright Teal
+  modified: {foreground: "#d9a66c"}          # modified - Muted Orange
+  deleted: {foreground: "#d96c75"}           # deleted - Soft Red
+  renamed: {foreground: "#b8bbbf"}           # renamed - Light Gray
+  typechange: {foreground: "#5a8585"}        # type change - Slate Teal
+  ignored: {foreground: "#6a6e73", is_dimmed: true}  # ignored - Dim Gray
+  conflicted: {foreground: "#d96c75"}        # conflicted - Soft Red
+
+git_repo:
+  branch_main: {foreground: "#7db5b5"}       # main branch - Bright Teal
+  branch_other: {foreground: "#5a8585"}      # other branch - Slate Teal
+  git_clean: {foreground: "#7db5b5"}         # clean - Bright Teal
+  git_dirty: {foreground: "#d9a66c"}         # dirty - Muted Orange
+
+security_context:
+  none: {foreground: "#6a6e73"}              # none - Dim Gray
+  selinux:
+    colon: {foreground: "#6a6e73"}           # colon - Dim Gray
+    user: {foreground: "#b8bbbf"}            # user - Light Gray
+    role: {foreground: "#5a8585"}            # role - Slate Teal
+    typ: {foreground: "#3d6666"}             # type - Deep Teal
+    range: {foreground: "#5a8585"}           # range - Slate Teal
+
+file_type:
+  image: {foreground: "#a7a2a9"}             # images - Rose Quartz
+  video: {foreground: "#d9a66c"}             # video - Muted Orange
+  music: {foreground: "#d9a66c"}             # music - Muted Orange
+  lossless: {foreground: "#7db5b5"}          # lossless - Bright Teal
+  crypto: {foreground: "#6a6e73", is_dimmed: true}  # crypto - Dim Gray
+  document: {foreground: "#f4f7f5"}          # documents - Seasalt
+  compressed: {foreground: "#d96c75"}        # compressed - Soft Red
+  temp: {foreground: "#6a6e73", is_dimmed: true}  # temp - Dim Gray
+  compiled: {foreground: "#3d6666"}          # compiled - Deep Teal
+  build: {foreground: "#5a8585"}             # build - Slate Teal
+  source: {foreground: "#7db5b5"}            # source - Bright Teal
+
+punctuation: {foreground: "#5a8585"}         # punctuation - Slate Teal
+date: {foreground: "#b8bbbf"}                # date - Light Gray
+inode: {foreground: "#6a6e73"}               # inode - Dim Gray
+blocks: {foreground: "#6a6e73"}              # blocks - Dim Gray
+header: {foreground: "#fefefe", is_bold: true}  # header - Pure White (bold)
+octal: {foreground: "#3d6666"}               # octal - Deep Teal
+flags: {foreground: "#5a8585"}               # flags - Slate Teal
+
+symlink_path: {foreground: "#7db5b5"}        # symlink path - Bright Teal
+control_char: {foreground: "#b8bbbf"}        # control char - Light Gray
+broken_symlink: {foreground: "#d96c75"}      # broken symlink - Soft Red
+broken_path_overlay: {foreground: "#6a6e73"} # broken path overlay - Dim Gray

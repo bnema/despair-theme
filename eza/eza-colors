@@ -1,0 +1,53 @@
+# Despair Theme for eza
+# Color configuration using 24-bit truecolor RGB values
+
+# File types
+di=38;2;90;133;133:       # directories - Slate Teal
+ex=38;2;125;181;181:      # executables - Bright Teal
+fi=38;2;244;247;245:      # regular files - Seasalt
+pi=38;2;106;110;115:      # named pipes - Dim Gray
+so=38;2;217;108;117:      # sockets - Soft Red
+bd=38;2;217;166;108:      # block devices - Muted Orange
+cd=38;2;217;166;108:      # character devices - Muted Orange
+ln=38;2;108;155;217:      # symlinks - Info Blue
+or=38;2;217;108;117:      # broken symlinks - Soft Red
+
+# Users and groups
+uu=38;2;244;247;245:      # current user - Seasalt
+gu=38;2;184;187;191:      # user in group - Light Gray
+un=38;2;139;143;148:      # other user - Silver Gray
+uR=38;2;217;108;117:      # root user - Soft Red
+
+# Metadata
+da=38;2;139;143;148:      # date/time - Silver Gray
+sn=38;2;106;110;115:      # file size numbers - Dim Gray
+sb=38;2;139;143;148:      # file size units - Silver Gray
+df=38;2;106;110;115:      # device major ID - Dim Gray
+ds=38;2;106;110;115:      # device minor ID - Dim Gray
+
+# Permissions
+ur=38;2;217;108;117:      # user read - Soft Red (caution)
+uw=38;2;217;108;117:      # user write - Soft Red (caution)
+ux=38;2;125;181;181:      # user execute - Bright Teal (allowed)
+ue=38;2;125;181;181:      # other execute - Bright Teal (allowed)
+gr=38;2;217;166;108:      # group read - Muted Orange
+gw=38;2;217;166;108:      # group write - Muted Orange
+gx=38;2;125;181;181:      # group execute - Bright Teal
+tr=38;2;217;166;108:      # others read - Muted Orange
+tw=38;2;217;166;108:      # others write - Muted Orange
+tx=38;2;125;181;181:      # others execute - Bright Teal
+su=38;2;217;108;117:      # setuid/setgid - Soft Red
+sf=38;2;217;108;117:      # setuid/sticky other - Soft Red
+xa=38;2;217;166;108:      # extended attributes - Muted Orange
+
+# Links
+lc=38;2;139;143;148:      # hard link count - Silver Gray
+lm=38;2;217;108;117:      # multiple hard links - Soft Red
+
+# Git status
+ga=38;2;125;181;181:      # added - Bright Teal
+gm=38;2;217;166;108:      # modified - Muted Orange
+gd=38;2;217;108;117:      # deleted - Soft Red
+
+# Icons (optional - will match file color if not set)
+ic=38;2;90;133;133:       # icon color - Slate Teal

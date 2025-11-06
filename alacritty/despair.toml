@@ -1,0 +1,36 @@
+# Despair Design System for Alacritty
+# A dark theme with muted grays and subtle teals
+
+[colors]
+[colors.primary]
+background = "0x08090a"  # Void Black - deepest background
+foreground = "0xf4f7f5"  # Seasalt - main body text
+
+[colors.cursor]
+cursor = "0x5a8585"      # Slate Teal - cursor color
+text = "0xf4f7f5"        # Seasalt - text under cursor
+
+[colors.selection]
+background = "0x2a4a4a"  # Dark Teal - selection background
+foreground = "0xf4f7f5"  # Seasalt - selection text
+
+# ANSI Colors - Following design system specification
+[colors.normal]
+black = "0x08090a"       # Void Black
+red = "0xd96c75"         # Soft Red - errors/deletions
+green = "0x7db5b5"       # Bright Teal - success/additions
+yellow = "0xd9a66c"      # Muted Orange - warnings
+blue = "0x6c9bd9"        # Info Blue - informational
+magenta = "0xa7a2a9"     # Rose Quartz - selected text
+cyan = "0x5a8585"        # Slate Teal - secondary interactive
+white = "0xf4f7f5"       # Seasalt - main text
+
+[colors.bright]
+black = "0x2d3236"       # Slate Gray - bright black
+red = "0xd96c75"         # Soft Red - bright red (same)
+green = "0x7db5b5"       # Bright Teal - bright green (same)
+yellow = "0xd9a66c"      # Muted Orange - bright yellow (same)
+blue = "0x6c9bd9"        # Info Blue - bright blue (same)
+magenta = "0xa7a2a9"     # Rose Quartz - bright magenta (same)
+cyan = "0x7db5b5"        # Bright Teal - bright cyan (brighter variant)
+white = "0xfefefe"       # Pure White - emphasized text

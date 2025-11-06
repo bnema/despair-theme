@@ -1,0 +1,176 @@
+// ────────────────────────────────────────────────────────────
+// Despair Theme for Zellij
+// Based on the Despair Design System v1.0
+// A muted dark theme with subtle teal accents
+// ────────────────────────────────────────────────────────────
+
+themes {
+    current {
+        // Text components - for general UI text elements
+        text_unselected {
+            base 244 247 245        // #f4f7f5 - Seasalt (main body text)
+            background 8 9 10       // #08090a - Void Black (primary background)
+            emphasis_0 125 181 181  // #7db5b5 - Bright Teal (keywords, links)
+            emphasis_1 217 166 108  // #d9a66c - Muted Orange (warnings)
+            emphasis_2 90 133 133   // #5a8585 - Slate Teal (types, classes)
+            emphasis_3 217 108 117  // #d96c75 - Soft Red (errors)
+        }
+
+        text_selected {
+            base 254 254 254        // #fefefe - Pure White (emphasized text)
+            background 42 74 74     // #2a4a4a - Dark Teal (inactive selection)
+            emphasis_0 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_1 217 166 108  // #d9a66c - Muted Orange
+            emphasis_2 90 133 133   // #5a8585 - Slate Teal
+            emphasis_3 217 108 117  // #d96c75 - Soft Red
+        }
+
+        // Ribbon components - for tabs and status bars
+        ribbon_unselected {
+            base 106 110 115        // #6a6e73 - Dim Gray (inactive tab text)
+            background 8 9 10       // #08090a - Void Black
+            emphasis_0 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_1 217 166 108  // #d9a66c - Muted Orange
+            emphasis_2 90 133 133   // #5a8585 - Slate Teal
+            emphasis_3 217 108 117  // #d96c75 - Soft Red
+        }
+
+        ribbon_selected {
+            base 244 247 245        // #f4f7f5 - Seasalt (active tab text)
+            background 34 40 35     // #222823 - Eerie Black (active tab bg)
+            emphasis_0 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_1 217 166 108  // #d9a66c - Muted Orange
+            emphasis_2 90 133 133   // #5a8585 - Slate Teal
+            emphasis_3 217 108 117  // #d96c75 - Soft Red
+        }
+
+        // Table components - for session manager and other table views
+        table_title {
+            base 254 254 254        // #fefefe - Pure White
+            background 90 133 133   // #5a8585 - Slate Teal (table header)
+            emphasis_0 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_1 217 166 108  // #d9a66c - Muted Orange
+            emphasis_2 90 133 133   // #5a8585 - Slate Teal
+            emphasis_3 217 108 117  // #d96c75 - Soft Red
+        }
+
+        table_cell_unselected {
+            base 244 247 245        // #f4f7f5 - Seasalt
+            background 24 26 27     // #181a1b - Deep Charcoal
+            emphasis_0 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_1 217 166 108  // #d9a66c - Muted Orange
+            emphasis_2 90 133 133   // #5a8585 - Slate Teal
+            emphasis_3 217 108 117  // #d96c75 - Soft Red
+        }
+
+        table_cell_selected {
+            base 254 254 254        // #fefefe - Pure White
+            background 90 133 133   // #5a8585 - Slate Teal (active selection)
+            emphasis_0 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_1 217 166 108  // #d9a66c - Muted Orange
+            emphasis_2 90 133 133   // #5a8585 - Slate Teal
+            emphasis_3 217 108 117  // #d96c75 - Soft Red
+        }
+
+        // List components - for file browsers and selection lists
+        list_unselected {
+            base 244 247 245        // #f4f7f5 - Seasalt
+            background 15 16 17     // #0f1011 - Shadow Gray (sidebar)
+            emphasis_0 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_1 217 166 108  // #d9a66c - Muted Orange
+            emphasis_2 90 133 133   // #5a8585 - Slate Teal
+            emphasis_3 217 108 117  // #d96c75 - Soft Red
+        }
+
+        list_selected {
+            base 254 254 254        // #fefefe - Pure White
+            background 90 133 133   // #5a8585 - Slate Teal (active selection)
+            emphasis_0 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_1 217 166 108  // #d9a66c - Muted Orange
+            emphasis_2 90 133 133   // #5a8585 - Slate Teal
+            emphasis_3 217 108 117  // #d96c75 - Soft Red
+        }
+
+        // Frame components - for pane borders and dividers
+        frame_unselected {
+            base 87 90 94           // #575a5e - Davys Gray (subtle inactive border)
+            background 8 9 10       // #08090a - Void Black
+            emphasis_0 87 90 94     // #575a5e - Davys Gray (inactive borders)
+            emphasis_1 87 90 94     // #575a5e - Davys Gray
+            emphasis_2 87 90 94     // #575a5e - Davys Gray
+            emphasis_3 87 90 94     // #575a5e - Davys Gray
+        }
+
+        frame_selected {
+            base 90 133 133         // #5a8585 - Slate Teal (active border)
+            background 8 9 10       // #08090a - Void Black
+            emphasis_0 125 181 181  // #7db5b5 - Bright Teal (focus border)
+            emphasis_1 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_2 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_3 125 181 181  // #7db5b5 - Bright Teal
+        }
+
+        frame_highlight {
+            base 125 181 181        // #7db5b5 - Bright Teal (highlight)
+            background 8 9 10       // #08090a - Void Black
+            emphasis_0 217 166 108  // #d9a66c - Muted Orange (attention)
+            emphasis_1 217 166 108  // #d9a66c - Muted Orange
+            emphasis_2 217 166 108  // #d9a66c - Muted Orange
+            emphasis_3 217 166 108  // #d9a66c - Muted Orange
+        }
+
+        // Exit code components - for command completion status
+        exit_code_success {
+            base 125 181 181        // #7db5b5 - Bright Teal (success)
+            background 8 9 10       // #08090a - Void Black
+            emphasis_0 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_1 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_2 125 181 181  // #7db5b5 - Bright Teal
+            emphasis_3 125 181 181  // #7db5b5 - Bright Teal
+        }
+
+        exit_code_error {
+            base 217 108 117        // #d96c75 - Soft Red (error)
+            background 8 9 10       // #08090a - Void Black
+            emphasis_0 217 108 117  // #d96c75 - Soft Red
+            emphasis_1 217 108 117  // #d96c75 - Soft Red
+            emphasis_2 217 108 117  // #d96c75 - Soft Red
+            emphasis_3 217 108 117  // #d96c75 - Soft Red
+        }
+
+        // Multiplayer user colors - for collaborative sessions
+        multiplayer_user_colors {
+            player_1 125 181 181    // #7db5b5 - Bright Teal
+            player_2 217 166 108    // #d9a66c - Muted Orange
+            player_3 108 155 217    // #6c9bd9 - Info Blue
+            player_4 167 162 169    // #a7a2a9 - Rose Quartz
+            player_5 90 133 133     // #5a8585 - Slate Teal
+            player_6 217 108 117    // #d96c75 - Soft Red
+            player_7 139 143 148    // #8b8f94 - Silver Gray
+            player_8 184 187 191    // #b8bbbf - Light Gray
+            player_9 254 254 254    // #fefefe - Pure White
+            player_10 106 110 115   // #6a6e73 - Dim Gray
+        }
+
+        // Terminal colors (ANSI) - standard terminal color palette
+        black "#08090a"         // Void Black
+        red "#d96c75"           // Soft Red
+        green "#7db5b5"         // Bright Teal (success)
+        yellow "#d9a66c"        // Muted Orange (warnings)
+        blue "#6c9bd9"          // Info Blue
+        magenta "#a7a2a9"       // Rose Quartz
+        cyan "#5a8585"          // Slate Teal
+        white "#f4f7f5"         // Seasalt
+        orange "#d9a66c"        // Muted Orange
+
+        // Bright terminal colors - bright variants
+        bright_black "#2d3236"   // Slate Gray
+        bright_red "#d96c75"     // Soft Red
+        bright_green "#7db5b5"   // Bright Teal
+        bright_yellow "#d9a66c"  // Muted Orange
+        bright_blue "#6c9bd9"    // Info Blue
+        bright_magenta "#a7a2a9" // Rose Quartz
+        bright_cyan "#7db5b5"    // Bright Teal
+        bright_white "#fefefe"   // Pure White
+    }
+}

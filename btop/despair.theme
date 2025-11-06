@@ -1,0 +1,104 @@
+# Despair theme for btop
+# Based on Despair design system with muted grays and subtle teal nuances
+
+# Main background
+theme[main_bg]="#08090a"
+
+# Main text color
+theme[main_fg]="#f4f7f5"
+
+# Title color
+theme[title]="#7db5b5"
+
+# Highlight color
+theme[hi_fg]="#7db5b5"
+
+# Selected background
+theme[selected_bg]="#5a8585"
+theme[selected_fg]="#08090a"
+
+# Inactive/dimmed text
+theme[inactive_fg]="#6a6e73"
+
+# Graph colors for CPU usage
+theme[cpu_box]="#7db5b5"
+theme[mem_box]="#5a8585"
+theme[net_box]="#a7a2a9"
+theme[proc_box]="#3d6666"
+
+# Graph fill colors - CPU
+theme[cpu_start]="#3d6666"
+theme[cpu_mid]="#5a8585"
+theme[cpu_end]="#7db5b5"
+
+# Memory colors
+theme[mem_start]="#2a4a4a"
+theme[mem_mid]="#5a8585"
+theme[mem_end]="#7db5b5"
+
+# Network colors
+theme[net_start]="#1f3636"
+theme[net_mid]="#3d6666"
+theme[net_end]="#5a8585"
+
+# Process list colors
+theme[proc_start]="#6a6e73"
+theme[proc_mid]="#8b8f94"
+theme[proc_end]="#f4f7f5"
+
+# Graph gradient colors
+theme[graph_text]="#f4f7f5"
+
+# Temperature colors
+theme[temp_start]="#3d6666"
+theme[temp_mid]="#5a8585"
+theme[temp_end]="#7db5b5"
+
+# Used/available colors
+theme[used_start]="#2a4a4a"
+theme[used_mid]="#5a8585"
+theme[used_end]="#7db5b5"
+
+theme[available_start]="#575a5e"
+theme[available_mid]="#8b8f94"
+theme[available_end]="#b8bbbf"
+
+# Cache colors
+theme[cached_start]="#2a4a4a"
+theme[cached_mid]="#3d6666"
+theme[cached_end]="#5a8585"
+
+# Free colors
+theme[free_start]="#0f1011"
+theme[free_mid]="#2a4a4a"
+theme[free_end]="#575a5e"
+
+# Process colors
+theme[process_start]="#3d6666"
+theme[process_mid]="#5a8585"
+theme[process_end]="#7db5b5"
+
+# Border colors
+theme[div_line]="#2a4a4a"
+
+# Background color of percentage meters
+theme[meter_bg]="#0f1011"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#7db5b5"
+
+# Download graph colors
+theme[download_start]="#1f3636"
+theme[download_mid]="#3d6666"
+theme[download_end]="#5a8585"
+
+# Upload graph colors
+theme[upload_start]="#5a8585"
+theme[upload_mid]="#3d6666"
+theme[upload_end]="#2a4a4a"
+
+# Status colors for different states
+theme[status_good]="#7db5b5"
+theme[status_warn]="#d9a66c"
+theme[status_error]="#d96c75"
+theme[status_inactive]="#6a6e73"
