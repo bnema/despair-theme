@@ -64,9 +64,9 @@ end
 -- ============================================================================
 
 -- Basic editor
-hl("Normal", { fg = colors.fg_secondary, bg = colors.bg })  -- Default text in muted gray
-hl("NormalFloat", { fg = colors.fg_secondary, bg = colors.bg_float })
-hl("NormalNC", { fg = colors.fg_tertiary, bg = colors.bg }) -- Inactive windows even more subtle
+hl("Normal", { fg = colors.fg, bg = colors.bg })  -- Main body text in Seasalt
+hl("NormalFloat", { fg = colors.fg, bg = colors.bg_float })
+hl("NormalNC", { fg = colors.fg_secondary, bg = colors.bg }) -- Inactive windows slightly dimmer
 hl("FloatBorder", { fg = colors.gray_graphite, bg = "NONE" })  -- Transparent background removes margin
 hl("FloatTitle", { fg = colors.fg_alt, bg = colors.teal_slate, bold = true })
 
@@ -150,15 +150,15 @@ hl("Boolean", { fg = colors.teal_bright })
 hl("Float", { fg = colors.teal_deep })
 
 -- Identifiers
-hl("Identifier", { fg = colors.fg_secondary })  -- Regular variables in muted gray
-hl("Function", { fg = colors.fg_alt, bold = true })  -- Keep functions bright and bold
+hl("Identifier", { fg = colors.fg })  -- Regular variables in Seasalt
+hl("Function", { fg = colors.teal_slate, bold = true })  -- Functions in Slate Teal, bold
 
 -- Statements
 hl("Statement", { fg = colors.teal_bright })
 hl("Conditional", { fg = colors.teal_bright })
 hl("Repeat", { fg = colors.teal_bright })
 hl("Label", { fg = colors.teal_bright })
-hl("Operator", { fg = colors.fg_tertiary })  -- Operators more subtle
+hl("Operator", { fg = colors.teal_slate })  -- Operators in Slate Teal
 hl("Keyword", { fg = colors.teal_bright, italic = true })
 hl("Exception", { fg = colors.error })
 
@@ -166,7 +166,7 @@ hl("Exception", { fg = colors.error })
 hl("PreProc", { fg = colors.teal_bright })
 hl("Include", { fg = colors.teal_bright })
 hl("Define", { fg = colors.teal_bright })
-hl("Macro", { fg = colors.warn })
+hl("Macro", { fg = colors.teal_bright })
 hl("PreCondit", { fg = colors.teal_bright })
 
 -- Types
@@ -176,10 +176,10 @@ hl("Structure", { fg = colors.teal_slate })
 hl("Typedef", { fg = colors.teal_slate })
 
 -- Special
-hl("Special", { fg = colors.warn })
+hl("Special", { fg = colors.teal_slate })
 hl("SpecialChar", { fg = colors.teal_deep })
 hl("Tag", { fg = colors.teal_bright })
-hl("Delimiter", { fg = colors.fg_tertiary })  -- Delimiters more subtle
+hl("Delimiter", { fg = colors.teal_deep })  -- Delimiters in Deep Teal
 hl("Debug", { fg = colors.error })
 
 -- Other
@@ -273,17 +273,17 @@ hl("@comment.warning", { fg = colors.warn, bold = true })
 hl("@comment.error", { fg = colors.error, bold = true })
 hl("@comment.todo", { link = "Todo" })
 
--- Constants
-hl("@constant", { link = "Constant" })
-hl("@constant.builtin", { fg = colors.teal_slate })
+-- Constants (nuanced hierarchy)
+hl("@constant", { fg = colors.teal_deep })  -- Regular constants in Deep Teal
+hl("@constant.builtin", { fg = colors.teal_bright })  -- Built-in constants brighter
 hl("@constant.macro", { link = "Macro" })
 
 -- Strings
 hl("@string", { link = "String" })
-hl("@string.escape", { fg = colors.teal_bright })
+hl("@string.escape", { fg = colors.teal_bright })  -- Escape sequences in Bright Teal
 hl("@string.regexp", { fg = colors.teal_deep })
 hl("@string.regex", { fg = colors.teal_deep })
-hl("@string.special", { fg = colors.warn })
+hl("@string.special", { fg = colors.teal_bright })  -- Format strings (%s, %w, etc.) in Bright Teal
 hl("@string.special.path", { fg = colors.teal_bright, underline = true })
 hl("@string.special.symbol", { fg = colors.teal_slate })
 hl("@string.special.url", { fg = colors.teal_bright, underline = true })
@@ -296,16 +296,16 @@ hl("@number.float", { link = "Float" })
 hl("@float", { link = "Float" })
 hl("@boolean", { link = "Boolean" })
 
--- Functions
-hl("@function", { link = "Function" })
-hl("@function.builtin", { fg = colors.teal_slate, bold = true })
-hl("@function.call", { link = "Function" })
+-- Functions (balanced hierarchy - definitions stand out, calls are subtle)
+hl("@function", { fg = colors.fg_alt, bold = true })  -- Function definitions in Pure White, bold
+hl("@function.builtin", { fg = colors.teal_bright, bold = true })  -- Built-ins in Bright Teal
+hl("@function.call", { fg = colors.teal_slate })  -- Function calls in Slate Teal
 hl("@function.macro", { link = "Macro" })
-hl("@function.method", { link = "Function" })
-hl("@method", { link = "Function" })
-hl("@method.call", { link = "Function" })
+hl("@function.method", { fg = colors.fg_alt, bold = true })  -- Method definitions in Pure White
+hl("@method", { fg = colors.fg_alt, bold = true })
+hl("@method.call", { fg = colors.teal_slate })  -- Method calls in Slate Teal
 hl("@constructor", { fg = colors.teal_slate, bold = true })
-hl("@parameter", { fg = colors.fg_secondary })  -- Parameters in muted gray
+hl("@parameter", { fg = colors.fg })  -- Parameters in Seasalt
 
 -- Keywords
 hl("@keyword", { link = "Keyword" })
@@ -330,37 +330,37 @@ hl("@exception", { link = "Exception" })
 hl("@include", { link = "Include" })
 hl("@debug", { link = "Debug" })
 
--- Types
-hl("@type", { link = "Type" })
-hl("@type.builtin", { fg = colors.teal_slate })
-hl("@type.definition", { link = "Typedef" })
-hl("@type.qualifier", { fg = colors.teal_bright })
+-- Types (using different teal shades for hierarchy)
+hl("@type", { fg = colors.teal_slate })  -- User types in Slate Teal
+hl("@type.builtin", { fg = colors.teal_bright })  -- Built-in types brighter
+hl("@type.definition", { fg = colors.fg_alt, bold = true })  -- Type definitions in Pure White
+hl("@type.qualifier", { fg = colors.teal_deep })  -- Qualifiers in Deep Teal
 hl("@storageclass", { link = "StorageClass" })
-hl("@attribute", { fg = colors.warn })
+hl("@attribute", { fg = colors.teal_bright })
 hl("@structure", { link = "Structure" })
 
 -- Variables
-hl("@variable", { fg = colors.fg_secondary })  -- Regular variables in muted gray
-hl("@variable.builtin", { fg = colors.teal_slate })  -- Built-ins stay important
-hl("@variable.parameter", { fg = colors.fg_secondary })  -- Parameters muted
-hl("@variable.member", { fg = colors.fg_secondary })  -- Members muted
-hl("@field", { fg = colors.fg_secondary })  -- Fields muted
-hl("@property", { fg = colors.fg_secondary })  -- Properties muted
+hl("@variable", { fg = colors.fg })  -- Regular variables in Seasalt
+hl("@variable.builtin", { fg = colors.teal_slate })  -- Built-ins in Slate Teal
+hl("@variable.parameter", { fg = colors.fg })  -- Parameters in Seasalt
+hl("@variable.member", { fg = colors.teal_slate })  -- Members/properties in Slate Teal
+hl("@field", { fg = colors.teal_slate })  -- Fields in Slate Teal
+hl("@property", { fg = colors.teal_slate })  -- Properties in Slate Teal
 
--- Namespaces and modules
-hl("@namespace", { fg = colors.teal_slate })
-hl("@module", { fg = colors.teal_slate })
+-- Namespaces and modules (important structural elements)
+hl("@namespace", { fg = colors.teal_bright })  -- Namespaces in Bright Teal
+hl("@module", { fg = colors.teal_bright })  -- Modules in Bright Teal
 hl("@symbol", { fg = colors.teal_deep })
 
--- Punctuation
-hl("@punctuation.delimiter", { fg = colors.fg_tertiary })  -- Subtle delimiters
-hl("@punctuation.bracket", { fg = colors.fg_tertiary })  -- Subtle brackets
-hl("@punctuation.special", { fg = colors.teal_slate })
-hl("@punctuation", { fg = colors.fg_tertiary })
+-- Punctuation (using teal nuances for visual hierarchy)
+hl("@punctuation.delimiter", { fg = colors.teal_deep })  -- Delimiters in Deep Teal
+hl("@punctuation.bracket", { fg = colors.fg_secondary })  -- Brackets in Light Gray
+hl("@punctuation.special", { fg = colors.teal_bright })  -- Special punct in Bright Teal
+hl("@punctuation", { fg = colors.teal_deep })
 
 -- Tags (HTML/XML)
 hl("@tag", { link = "Tag" })
-hl("@tag.attribute", { fg = colors.warn })
+hl("@tag.attribute", { fg = colors.teal_slate })
 hl("@tag.delimiter", { fg = colors.fg_secondary })
 
 -- Markup (Markdown, etc.)
@@ -419,22 +419,30 @@ hl("@macro", { link = "Macro" })
 -- LSP SEMANTIC TOKENS
 -- ============================================================================
 
+-- LSP Semantic Tokens (use {} to let treesitter handle the highlighting)
 hl("@lsp.type.class", { link = "@type" })
 hl("@lsp.type.comment", { link = "@comment" })
 hl("@lsp.type.decorator", { link = "@macro" })
 hl("@lsp.type.enum", { link = "@type" })
 hl("@lsp.type.enumMember", { link = "@constant" })
-hl("@lsp.type.function", { link = "@function" })
+hl("@lsp.type.function", {})  -- Use treesitter styles
 hl("@lsp.type.interface", { link = "@constructor" })
 hl("@lsp.type.macro", { link = "@macro" })
-hl("@lsp.type.method", { link = "@method" })
+hl("@lsp.type.method", {})  -- Use treesitter styles
 hl("@lsp.type.namespace", { link = "@namespace" })
 hl("@lsp.type.parameter", { link = "@parameter" })
-hl("@lsp.type.property", { link = "@property" })
+hl("@lsp.type.property", {})  -- Use treesitter styles
 hl("@lsp.type.struct", { link = "@type" })
 hl("@lsp.type.type", { link = "@type" })
 hl("@lsp.type.typeParameter", { link = "@type.definition" })
-hl("@lsp.type.variable", { link = "@variable" })
+hl("@lsp.type.variable", {})  -- Use treesitter styles
+
+-- LSP Type Modifiers
+hl("@lsp.typemod.function.defaultLibrary", { link = "@function.builtin" })
+hl("@lsp.typemod.method.defaultLibrary", { link = "@function.builtin" })
+hl("@lsp.typemod.variable.callable", { link = "@function" })
+hl("@lsp.typemod.variable.defaultLibrary", { link = "@variable.builtin" })
+hl("@lsp.typemod.variable.static", { link = "@constant" })
 
 -- ============================================================================
 -- GIT SIGNS
@@ -868,7 +876,7 @@ hl("markdownH3", { fg = colors.teal_slate, bold = true })
 hl("markdownH4", { fg = colors.teal_slate, bold = true })
 hl("markdownH5", { fg = colors.teal_slate })
 hl("markdownH6", { fg = colors.teal_slate })
-hl("markdownHeadingDelimiter", { fg = colors.warn, bold = true })
+hl("markdownHeadingDelimiter", { fg = colors.teal_bright, bold = true })
 hl("markdownCode", { fg = colors.gray_rose })
 hl("markdownCodeBlock", { fg = colors.gray_rose })
 hl("markdownCodeDelimiter", { fg = colors.teal_slate })
