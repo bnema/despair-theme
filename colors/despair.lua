@@ -75,9 +75,9 @@ hl("Cursor", { fg = colors.bg, bg = colors.teal_slate })
 hl("lCursor", { link = "Cursor" })
 hl("iCursor", { link = "Cursor" })
 hl("vCursor", { link = "Cursor" })
-hl("CursorLine", { bg = colors.bg_highlight })
-hl("CursorColumn", { bg = colors.bg_highlight })
-hl("ColorColumn", { bg = colors.bg_highlight })
+hl("CursorLine", { bg = colors.bg_float })
+hl("CursorColumn", { bg = colors.bg_float })
+hl("ColorColumn", { bg = colors.bg_float })
 
 -- Line numbers and signs
 hl("LineNr", { fg = colors.gray_graphite })
@@ -343,9 +343,9 @@ hl("@structure", { link = "Structure" })
 hl("@variable", { fg = colors.fg })  -- Regular variables in Seasalt
 hl("@variable.builtin", { fg = colors.teal_slate })  -- Built-ins in Slate Teal
 hl("@variable.parameter", { fg = colors.fg })  -- Parameters in Seasalt
-hl("@variable.member", { fg = colors.teal_slate })  -- Members/properties in Slate Teal
-hl("@field", { fg = colors.teal_slate })  -- Fields in Slate Teal
-hl("@property", { fg = colors.teal_slate })  -- Properties in Slate Teal
+hl("@variable.member", { fg = colors.fg_secondary })  -- Members/properties in Light Gray
+hl("@field", { fg = colors.fg_secondary })  -- Fields in Light Gray
+hl("@property", { fg = colors.fg_secondary })  -- Properties in Light Gray
 
 -- Namespaces and modules (important structural elements)
 hl("@namespace", { fg = colors.teal_bright })  -- Namespaces in Bright Teal
