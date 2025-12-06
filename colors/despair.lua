@@ -160,7 +160,7 @@ hl("Repeat", { fg = colors.teal_bright })
 hl("Label", { fg = colors.teal_bright })
 hl("Operator", { fg = colors.teal_slate })  -- Operators in Slate Teal
 hl("Keyword", { fg = colors.teal_bright, italic = true })
-hl("Exception", { fg = colors.error })
+hl("Exception", { fg = colors.teal_bright })  -- try/catch/throw in teal (not error red)
 
 -- PreProc
 hl("PreProc", { fg = colors.teal_bright })
@@ -315,7 +315,7 @@ hl("@keyword.return", { fg = colors.teal_bright, italic = true })
 hl("@keyword.function", { fg = colors.teal_bright, italic = true })
 hl("@keyword.operator", { fg = colors.teal_slate })
 hl("@keyword.import", { link = "Include" })
-hl("@keyword.exception", { link = "Exception" })
+hl("@keyword.exception", { fg = colors.teal_bright })  -- try/catch/throw
 hl("@keyword.debug", { link = "Debug" })
 hl("@keyword.directive", { link = "PreProc" })
 hl("@keyword.directive.define", { link = "Define" })
