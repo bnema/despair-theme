@@ -458,14 +458,14 @@ hl("GitSignsDelete", { fg = colors.error, bg = colors.bg })
 
 -- Main fzf window
 hl("FzfLuaNormal", { fg = colors.fg_secondary, bg = colors.bg_float })
-hl("FzfLuaBorder", { fg = colors.gray_graphite, bg = "NONE" })  -- Transparent border background
+hl("FzfLuaBorder", { fg = colors.bg_card, bg = colors.bg_float })  -- Subtle border matching float bg
 hl("FzfLuaTitle", { fg = colors.fg_alt, bg = colors.teal_slate, bold = true })
 hl("FzfLuaTitleFlags", { fg = colors.fg_dim, bg = colors.bg_highlight })
 hl("FzfLuaBackdrop", { bg = colors.bg_float })  -- Match window background to remove dark margin
 
 -- Preview window
 hl("FzfLuaPreviewNormal", { fg = colors.fg_secondary, bg = colors.bg_float })
-hl("FzfLuaPreviewBorder", { fg = colors.gray_graphite, bg = "NONE" })  -- Transparent border background
+hl("FzfLuaPreviewBorder", { fg = colors.bg_card, bg = colors.bg_float })  -- Subtle border matching float bg
 hl("FzfLuaPreviewTitle", { fg = colors.fg_alt, bg = colors.teal_bright, bold = true })
 hl("FzfLuaCursor", { link = "Cursor" })
 hl("FzfLuaCursorLine", { bg = colors.bg_highlight })
@@ -513,10 +513,10 @@ hl("FzfLuaLiveSym", { fg = colors.teal_slate })
 hl("FzfLuaFzfNormal", { fg = colors.fg_secondary, bg = colors.bg_float })
 hl("FzfLuaFzfCursorLine", { fg = colors.fg_alt, bg = colors.teal_dark, bold = true })
 hl("FzfLuaFzfMatch", { fg = colors.teal_bright, bold = true })
-hl("FzfLuaFzfBorder", { fg = colors.gray_graphite, bg = "NONE" })  -- Transparent border background
-hl("FzfLuaFzfScrollbar", { fg = colors.gray_graphite, bg = "NONE" })
-hl("FzfLuaFzfSeparator", { fg = colors.gray_graphite, bg = "NONE" })  -- Transparent border background
-hl("FzfLuaFzfGutter", { bg = colors.bg_float })
+hl("FzfLuaFzfBorder", { fg = colors.bg_card, bg = "NONE" })  -- Transparent bg
+hl("FzfLuaFzfScrollbar", { fg = colors.bg_card, bg = "NONE" })
+hl("FzfLuaFzfSeparator", { fg = colors.bg_card, bg = "NONE" })  -- Transparent separator
+hl("FzfLuaFzfGutter", { bg = "NONE" })  -- Transparent gutter (gap between panels)
 hl("FzfLuaFzfHeader", { fg = colors.teal_bright, bold = true })
 hl("FzfLuaFzfInfo", { fg = colors.fg_dim })
 hl("FzfLuaFzfPointer", { fg = colors.teal_bright, bold = true })
