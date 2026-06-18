@@ -57,6 +57,7 @@ A dark theme for the chromatically exhausted.
 - **Fuzzel** - `fuzzel/despair.ini` → `~/.config/fuzzel/`
 - **Walker** - Use `walker/despair.css` in your config
 - **Zellij** - `zellij/despair.kdl` → `~/.config/zellij/themes/`
+- **Noctalia** - `noctalia/Despair/Despair.json` → `~/.config/noctalia/colorschemes/Despair/Despair.json`
 
 ### Other
 - **Chromium** - Icon/theme reference in `chromium/`
